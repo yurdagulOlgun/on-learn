@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>on-learn</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="text/javascript" src="../assets/someJS/stripe.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/stylesheets/mypage.css'>
+    <script src='stripe.js'></script>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <header class="section">
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="#">My Page</a>
+                        <ul class="submenu">
+
+                            <li><a href="/myvideo">My Contents</a></li>
+                            <li><a href="/index">Logout</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="/aboutUs">About Us</a></li>
+                </ul>
+            </header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                        <form action="payment" method="POST">
+                            
+                            <script src="//checkout.stripe.com/v2/checkout.js" class="stripe-button"
+                                data-key="<%= key %>" data-amount="7000" data-currency="usd" data-name=""
+                                data-description="" data-locale="auto">
+                            </script>
+                            <script>
+                                document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+                            </script>
+                            <button type="submit" class="paybutton" id="paybutton">
+                                <figcaption class="text">Dylan WALSH | Web Development | $70</figcaption>
+                                <a href="#"><img src="/assets/images/video.png"></a>
+                            </button>
+                        </form>
+                        
+                        
+                    </div>
+
+                    <br>
+                    <div class="col">
+                        <form action="payment" method="POST">
+
+                            <script src="//checkout.stripe.com/v2/checkout.js" class="stripe-button"
+                                data-key="<%= key %>" data-amount="7000" data-currency="usd" data-name=""
+                                data-description="" data-locale="auto">
+                            </script>
+                            <script>
+                                document.getElementsByClassName("stripe-button-el")[1].style.display = 'none';
+                            </script>
+                            <button type="submit" class="paybutton" id="paybutton2">
+                                <figcaption class="text">Tyler JONES | JAVA Development | $70</figcaption>
+                        <a href="#"><img src="/assets/images/video.png"></a>
+                            </button>
+                        </form>
+                        
+                    </div><br>
+
+                    <div class="col">
+                        <form action="payment" method="POST">
+
+                            <script src="//checkout.stripe.com/v2/checkout.js" class="stripe-button"
+                                data-key="<%= key %>" data-amount="7000" data-currency="usd" data-name=""
+                                data-description="" data-locale="auto">
+                            </script>
+                            <script>
+                                document.getElementsByClassName("stripe-button-el")[2].style.display = 'none';
+                            </script>
+                            <button type="submit" class="paybutton" id="paybutton3">
+                                <figcaption class="text">Ava GARCIA | Python Development | $70 </figcaption>
+                        <a href="#"><img src="/assets/images/video.png"></a>
+                            </button>
+                        </form>
+
+                        
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form action="payment" method="POST">
+
+                            <script src="//checkout.stripe.com/v2/checkout.js" class="stripe-button"
+                                data-key="<%= key %>" data-amount="7000" data-currency="usd" data-name=""
+                                data-description="" data-locale="auto">
+                            </script>
+                            <script>
+                                document.getElementsByClassName("stripe-button-el")[3].style.display = 'none';
+                            </script>
+                            <button type="submit" class="paybutton" id="paybutton4">
+                                <figcaption class="text">Olivia MILLER | Web Technologies | $70 </figcaption>
+                        <a href="#"><img src="/assets/images/video.png"></a>
+                            </button>
+                        </form>
+
+                        
+                    </div><br>
+                    <div class="col">
+                        <form action="payment" method="POST">
+
+                            <script src="//checkout.stripe.com/v2/checkout.js" class="stripe-button"
+                                data-key="<%= key %>" data-amount="7000" data-currency="usd" data-name=""
+                                data-description="" data-locale="auto">
+                            </script>
+                            <script>
+                                document.getElementsByClassName("stripe-button-el")[4].style.display = 'none';
+                            </script>
+                            <button type="submit" class="paybutton" id="paybutton5">
+                                <figcaption class="text">Veys SMITH | Java Development | $70</figcaption>
+                        <a href="#"><img src="/assets/images/video.png"></a>
+                            </button>
+                        </form>
+
+                        
+                    </div><br>
+                    <div class="col">
+                        <form action="payment" method="POST">
+
+                            <script src="//checkout.stripe.com/v2/checkout.js" class="stripe-button"
+                                data-key="<%= key %>" data-amount="7000" data-currency="usd" data-name=""
+                                data-description="" data-locale="auto">
+                            </script>
+                            <script>
+                                document.getElementsByClassName("stripe-button-el")[5].style.display = 'none';
+                            </script>
+                            <button type="submit" class="paybutton" id="paybutton6">
+                                <figcaption class="text">Angelina DAVIS | Front-end Development | $70</figcaption>
+                        <a href="#"><img src="/assets/images/video.png"></a>
+                            </button>
+                        </form>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+        </ul>
+    </section>
+</body>
+
+</html>
